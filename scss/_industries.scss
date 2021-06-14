@@ -1,0 +1,21 @@
+/* INDUSTRIES */
+.industries__nav {
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.industries__content {
+  margin: 0 5px;
+  &--tab-pane {
+    background-image: $background-gradient;
+    padding: 10px;
+  }
+}
+
+/* bootstrap override nav-link colors*/
+.nav-pills .nav-link {
+  color: $menu_color;
+}
+.nav-pills .nav-link.active {
+  background-color: $pills-background;
+  color: $pills-color;
+}

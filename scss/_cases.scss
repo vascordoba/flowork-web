@@ -1,0 +1,23 @@
+/* CASES */
+.cases__section {
+  font-weight: bold;
+  &--box {
+    background-size: cover;
+    background-position: center;
+    padding: 8px;
+    margin: 0 5px 20px 5px;
+    cursor: pointer;
+  }
+}
+
+.case-1 {
+  background-image: $pic-case-1;
+}
+
+.case-2 {
+  background-image: $pic-case-2;
+}
+
+.case-3 {
+  background-image: $pic-case-3;
+}

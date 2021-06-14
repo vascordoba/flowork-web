@@ -1,0 +1,27 @@
+/* SOLUTIONS */
+
+.solution__section {
+  margin: 5px 0;
+
+  &--desc {
+    height: inherit;
+    background-image: $background-gradient;
+    padding: 10px;
+  }
+
+  &--pic {
+    display: none;
+    height: inherit;
+    background-size: cover;
+    background-position: center;
+    z-index: 100;
+  }
+}
+
+.pic-1 {
+  background-image: $pic-solution-1;
+}
+
+.pic-2 {
+  background-image: $pic-solution-2;
+}

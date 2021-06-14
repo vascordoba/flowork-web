@@ -1,0 +1,15 @@
+@media only screen and (min-width: 768px) {
+  body {
+    background-image: $background-3;
+  }
+
+  /* INDEX */
+  .home__section--text {
+    font-size: x-large;
+  }
+
+  /* SUCCESS CASES */
+  .cases__section--box {
+    height: 250px;
+  }
+}

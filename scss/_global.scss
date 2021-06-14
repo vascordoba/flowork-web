@@ -1,0 +1,101 @@
+html {
+  margin: 0;
+  padding: 0;
+}
+
+/* INDEX and MAIN structure*/
+body {
+  height: 100vh;
+  font-family: $main_font;
+  font-size: 100%;
+  background-image: $background-1;
+  background-repeat: no-repeat;
+  display: grid;
+  grid-template-areas:
+    "headNav"
+    "mainSection"
+    "footerBar";
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr auto;
+  grid-row-gap: 5px;
+  grid-column-gap: 5px;
+  align-content: stretch;
+}
+
+nav {
+  grid-area: headNav;
+}
+main {
+  grid-area: mainSection;
+}
+footer {
+  grid-area: footerBar;
+}
+
+li {
+  padding: 0 3px;
+  color: $menu_color;
+  a {
+    text-decoration: none;
+    color: inherit;
+    &:hover {
+      color: $menu_color-hover;
+    }
+  }
+}
+
+.logo {
+  font-size: 2rem;
+}
+
+.container h2,
+.container-fluid h2 {
+  color: $section_title;
+  font-weight: bolder;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  word-spacing: 10px;
+  line-height: 30px;
+  margin: 30px 0;
+}
+
+/* FOOTER */
+
+$icons: (
+  github: $icon-github,
+  facebook: $icon-facebook,
+  instagram: $icon-instagram,
+  linkedin: $icon-linkedin,
+  youtube: $icon-youtube,
+  twitter: $icon-twitter,
+);
+
+.footer__icon {
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  transition: 0.3s;
+  transform: scale(1, 1);
+  background-size: contain;
+  background-position: center;
+
+  &:hover {
+    opacity: 40%;
+    transition: 0.3s;
+    transform: scale(1.1, 1.1);
+  }
+
+  @each $icon, $image in $icons {
+    &--#{$icon} {
+      background-image: $image;
+    }
+  }
+
+  @each $icon, $image in $icons {
+    &--#{$icon}-white {
+      background-image: $image;
+      filter: invert(1);
+    }
+  }
+}

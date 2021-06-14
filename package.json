@@ -1,0 +1,17 @@
+{
+  "name": "flowork_sanchez_sumay_sass",
+  "version": "1.0.0",
+  "description": "proyecto personal full stack",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --output-style expanded --include-path scss scss/main.scss css/styles.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "author": "Victor Ariel Sanchez Sumay",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^6.0.0",
+    "nodemon": "^2.0.7"
+  }
+}
