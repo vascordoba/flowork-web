@@ -14,7 +14,7 @@ body {
   font-family: "Ubuntu";
   font-size: 100%;
   background-image: url("../img/cool-background.png");
-  background-repeat: no-repeat;
+  background-repeat: repeat-y;
   display: grid;
   grid-template-areas: "headNav" "mainSection" "footerBar";
   grid-template-columns: 1fr;
@@ -34,6 +34,7 @@ main {
 
 footer {
   grid-area: footerBar;
+  background-color: rgba(0, 0, 0, 0.7);
 }
 
 li {
@@ -64,9 +65,54 @@ li a:hover {
   word-spacing: 10px;
   line-height: 30px;
   margin: 30px 0;
+  height: 50px;
+}
+
+.section--title {
+  background-color: rgba(255, 255, 255, 0.8);
 }
 
 /* FOOTER */
+.footer__cont {
+  margin: 5% 20% 5% 20%;
+  display: inline;
+  height: 300px;
+  align-content: flex-start;
+  align-items: initial;
+}
+
+.footer__cont--block {
+  display: inline-block;
+  width: 25%;
+  margin: 0 auto;
+}
+
+.footer__cont--block p {
+  margin-bottom: 0.2rem;
+}
+
+.footer__cont--block-p-l {
+  font-size: small;
+  text-align: end;
+  margin-right: 3%;
+}
+
+.footer__cont--block-p-l1 {
+  text-align: end;
+  font-size: x-large;
+  margin-right: 1%;
+}
+
+.footer__cont--block-p-r {
+  font-size: small;
+  margin-left: 3%;
+}
+
+.footer__cont--block-p-r1 {
+  font-size: x-large;
+  margin-left: 1%;
+}
+
 .footer__icon {
   width: 30px;
   height: 30px;
@@ -202,6 +248,10 @@ footer {
 /* SOLUTIONS */
 .solution__section {
   margin: 5px 0;
+}
+
+.solution__section--title {
+  font-size: x-large;
 }
 
 .solution__section--desc {

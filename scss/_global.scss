@@ -9,7 +9,7 @@ body {
   font-family: $main_font;
   font-size: 100%;
   background-image: $background-1;
-  background-repeat: no-repeat;
+  background-repeat: repeat-y;
   display: grid;
   grid-template-areas:
     "headNav"
@@ -30,6 +30,7 @@ main {
 }
 footer {
   grid-area: footerBar;
+  background-color: $footer_back;
 }
 
 li {
@@ -58,6 +59,10 @@ li {
   word-spacing: 10px;
   line-height: 30px;
   margin: 30px 0;
+  height: 50px;
+}
+.section--title {
+  background-color: $section_title_back;
 }
 
 /* FOOTER */
@@ -70,6 +75,44 @@ $icons: (
   youtube: $icon-youtube,
   twitter: $icon-twitter,
 );
+
+.footer__cont {
+  margin: 5% 20% 5% 20%;
+  display: inline;
+  height: 300px;
+  align-content: flex-start;
+  align-items: initial;
+
+  &--block {
+    display: inline-block;
+    width: 25%;
+    margin: 0 auto;
+
+    & p {
+      margin-bottom: 0.2rem;
+    }
+
+    &-p-l {
+      font-size: small;
+      text-align: end;
+      margin-right: 3%;
+      &1 {
+        text-align: end;
+        font-size: x-large;
+        margin-right: 1%;
+      }
+    }
+
+    &-p-r {
+      font-size: small;
+      margin-left: 3%;
+      &1 {
+        font-size: x-large;
+        margin-left: 1%;
+      }
+    }
+  }
+}
 
 .footer__icon {
   width: 30px;

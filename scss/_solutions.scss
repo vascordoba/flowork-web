@@ -3,6 +3,10 @@
 .solution__section {
   margin: 5px 0;
 
+  &--title {
+    font-size: x-large;
+  }
+
   &--desc {
     height: inherit;
     background-image: $background-gradient;

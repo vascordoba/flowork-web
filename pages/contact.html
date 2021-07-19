@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Our contact form to ask about features, demos and pricing">
   <meta name="keywords" content="WORKFLOW, TASK MANAGEMENT TOOL, TASKS, CLOUD, CONTACT, DEMO">
+  <link rel="stylesheet" href="../css/aos.css">
   <link rel="stylesheet" href="../css/bootstrap.min.css">
   <link rel="stylesheet" href="../css/bootstrap-grid.min.css">
   <link rel="stylesheet" href="../css/styles.css">
@@ -41,8 +42,8 @@
   </nav>
 
   <main class="container">
-    <h2>Contact Us</h2>
-    <form class="contact__section">
+    <h2 data-aos="fade-down">Contact Us</h2>
+    <form class="contact__section" data-aos="fade-down" data-aos-delay="100">
       <div class="form-group row">
         <label for="name" class="col-3 col-form-label">Name</label>
         <div class="col-9">
@@ -104,21 +105,39 @@
     </form>
 
   </main>
-  <footer>
-    <p class="float-left">© FloWork 2021</p>
-    <div class="float-right">
-      <div class="footer__icon footer__icon--github"></div>
-      <div class="footer__icon footer__icon--facebook"></div>
-      <div class="footer__icon footer__icon--instagram"></div>
-      <div class="footer__icon footer__icon--linkedin"></div>
-      <div class="footer__icon footer__icon--youtube"></div>
-      <div class="footer__icon footer__icon--twitter"></div>
+  <footer class="home">
+    <div class="footer__cont">
+      <div class="footer__cont--block">
+        <p class="footer__cont--block-p-l1">FloWork</p>
+        <p class="footer__cont--block-p-l">123 Cañada St</p>
+        <p class="footer__cont--block-p-l">ZIP: X5014IAD</p>
+        <p class="footer__cont--block-p-l">Córdoba, Argentina</p>
+      </div>
+      <div class="footer__cont--block">
+        <p class="footer__cont--block-p-r1">Studio</p>
+        <p class="footer__cont--block-p-r">(54) 11 3817 0589</p>
+        <p class="footer__cont--block-p-r">vascordoba@gmail.com</p>
+        <p class="footer__cont--block-p-r">&nbsp;</p>
+      </div>
+    </div>
+    <div class="footer_cont">
+      <p class="float-left">© FloWork 2021</p>
+      <div class="float-right">
+        <div class="footer__icon footer__icon--github-white"></div>
+        <div class="footer__icon footer__icon--facebook-white"></div>
+        <div class="footer__icon footer__icon--instagram-white"></div>
+        <div class="footer__icon footer__icon--linkedin-white"></div>
+        <div class="footer__icon footer__icon--youtube-white"></div>
+        <div class="footer__icon footer__icon--twitter-white"></div>
+      </div>
     </div>
   </footer>
   <script src="../js/jquery-3.6.0.min.js"></script>
   <script src="../js/bootstrap.bundle.min.js"></script>
   <script src="../js/anime.min.js"></script>
   <script src="../js/animations.js"></script>
+  <script src="../js/aos.js"></script>
+  <script>AOS.init({ duration: 1200 });</script>
 </body>
 
 </html>

@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Success cases using FloWork as selected workflows and task management solutions">
   <meta name="keywords" content="WORKFLOW, TASK MANAGEMENT TOOL, TASKS, CLOUD, SUCCESS CASES">
+  <link rel="stylesheet" href="../css/aos.css">
   <link rel="stylesheet" href="../css/bootstrap.min.css">
   <link rel="stylesheet" href="../css/bootstrap-grid.min.css">
   <link rel="stylesheet" href="../css/styles.css">
@@ -43,31 +44,50 @@
   <main>
 
     <section class="container-fluid">
-      <h2 id="cases">Success Cases</h2>
+      <h2 id="cases" data-aos="fade-down">Success Cases</h2>
       <article class="row cases__section">
 
-        <div class="col-lg-4 col-xs-12 cases__section--box case-1" data-toggle="modal" data-target="#modalCase1">
+        <div data-aos="fade-down" data-aos-delay="100" class="col-lg-4 col-xs-12 cases__section--box case-1"
+          data-toggle="modal" data-target="#modalCase1">
 
         </div>
-        <div class="col-lg-4 col-xs-12 cases__section--box case-2" data-toggle="modal" data-target="#modalCase2">
+        <div data-aos="fade-down" data-aos-delay="200" class="col-lg-4 col-xs-12 cases__section--box case-2"
+          data-toggle="modal" data-target="#modalCase2">
 
         </div>
-        <div class="col-lg-4 col-xs-12 cases__section--box case-3" data-toggle="modal" data-target="#modalCase3">
+        <div data-aos="fade-down" data-aos-delay="300" class="col-lg-4 col-xs-12 cases__section--box case-3"
+          data-toggle="modal" data-target="#modalCase3">
 
         </div>
 
       </article>
     </section>
   </main>
-  <footer>
-    <p class="float-left">© FloWork 2021</p>
-    <div class="float-right">
-      <div class="footer__icon footer__icon--github"></div>
-      <div class="footer__icon footer__icon--facebook"></div>
-      <div class="footer__icon footer__icon--instagram"></div>
-      <div class="footer__icon footer__icon--linkedin"></div>
-      <div class="footer__icon footer__icon--youtube"></div>
-      <div class="footer__icon footer__icon--twitter"></div>
+  <footer class="home">
+    <div class="footer__cont">
+      <div class="footer__cont--block">
+        <p class="footer__cont--block-p-l1">FloWork</p>
+        <p class="footer__cont--block-p-l">123 Cañada St</p>
+        <p class="footer__cont--block-p-l">ZIP: X5014IAD</p>
+        <p class="footer__cont--block-p-l">Córdoba, Argentina</p>
+      </div>
+      <div class="footer__cont--block">
+        <p class="footer__cont--block-p-r1">Studio</p>
+        <p class="footer__cont--block-p-r">(54) 11 3817 0589</p>
+        <p class="footer__cont--block-p-r">vascordoba@gmail.com</p>
+        <p class="footer__cont--block-p-r">&nbsp;</p>
+      </div>
+    </div>
+    <div class="footer_cont">
+      <p class="float-left">© FloWork 2021</p>
+      <div class="float-right">
+        <div class="footer__icon footer__icon--github-white"></div>
+        <div class="footer__icon footer__icon--facebook-white"></div>
+        <div class="footer__icon footer__icon--instagram-white"></div>
+        <div class="footer__icon footer__icon--linkedin-white"></div>
+        <div class="footer__icon footer__icon--youtube-white"></div>
+        <div class="footer__icon footer__icon--twitter-white"></div>
+      </div>
     </div>
   </footer>
 
@@ -153,6 +173,8 @@
   <script src="../js/bootstrap.bundle.min.js"></script>
   <script src="../js/anime.min.js"></script>
   <script src="../js/animations.js"></script>
+  <script src="../js/aos.js"></script>
+  <script>AOS.init({ duration: 1200 });</script>
 </body>
 
 </html>

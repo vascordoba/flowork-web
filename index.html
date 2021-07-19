@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="The best Cloud solution for complex workflows and task management">
   <meta name="keywords" content="WORKFLOW, TASK MANAGEMENT TOOL, TASKS, CLOUD, STEPS">
+  <link rel="stylesheet" href="./css/aos.css">
   <link rel="stylesheet" href="./css/bootstrap.min.css">
   <link rel="stylesheet" href="./css/bootstrap-grid.min.css">
   <link rel="stylesheet" href="./css/styles.css">
@@ -27,12 +28,12 @@
         <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button"
             aria-haspopup="true" aria-expanded="false">Solutions</a>
           <div class="dropdown-menu">
-            <a class="dropdown-item" href="pages/solutions.html#solution1">Workflow Management</a>
-            <a class="dropdown-item" href="pages/solutions.html#solution2">Task Management</a>
+            <a class="dropdown-item" href="solutions">Workflow Management</a>
+            <a class="dropdown-item" href="solution2">Task Management</a>
           </div>
         </li>
-        <li class="nav-item"><a class="nav-link" href="pages/industries.html">Industries</a></li>
-        <li class="nav-item"><a class="nav-link" href="pages/cases.html">Success Cases</a></li>
+        <li class="nav-item"><a class="nav-link" href="#industries">Industries</a></li>
+        <li class="nav-item"><a class="nav-link" href="#cases">Success Cases</a></li>
         <li class="nav-item"><a class="nav-link" href="pages/company.html">About Us</a></li>
         <li class="nav-item"><a class="nav-link" href="pages/contact.html">Contact Us</a></li>
         <li class="nav-item"><a class="nav-link" href="javascript:alert('Login page');">Login</a></li>
@@ -49,11 +50,11 @@
     <section class="row">
       <article class="col-lg-12 col-xs-12">
         <div class="home__section">
-          <p class="home home__section--text">
+          <p class="home home__section--text" data-aos="fade-right" data-aos-delay="200">
             The increasing complexity of technologies and business processes is a constant challenge for any
             organization nowadays.
           </p>
-          <p class="home home__section--text">
+          <p class="home home__section--text" data-aos="fade-left" data-aos-delay="1200">
             At <strong><i><u>FloWork</u></i></strong> we can support your daily operations with the fastest and easiest
             solution for
             Workflow and Task
@@ -63,22 +64,252 @@
         </div>
       </article>
     </section>
+    <br><br>
+    <section>
+      <h2 id="solutions" data-aos="fade-down" class="section--title">Solutions</h2>
+      <article class="row" data-aos="fade-right">
+        <div class="col-lg-8 col-xs-12 solution__section solution__section--desc">
+          <p id="solution1" class="solution__section--title">Workflow Management</p>
+          <p>
+            You can model all level of complex processes running in your daily operations. Never was so easy to
+            integrate any numbre of areas and teams to work as efficient as possible, with the chance to follow up at
+            any step.
+          </p>
+          <table>
+            <tr>
+              <th>Features</th>
+              <th>Benefits</th>
+            </tr>
+            <tr>
+              <td>Drag & Drop workflow design</td>
+              <td>
+                <ul>
+                  <li>Easily design your workflows</li>
+                  <li>Simulate process in real time</li>
+                  <li>Version controlling for evolving processes</li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <td>Workflow execution status</td>
+              <td>
+                <ul>
+                  <li>Hability to review the workflow status at any point</li>
+                  <li>Hability to reasign delayed tasks </li>
+                </ul>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="col-lg-4 col-xs-0 solution__section solution__section--pic pic-1">&nbsp;</div>
+
+      </article>
+      <article class="row" data-aos="fade-left">
+
+        <div class="col-lg-4 col-xs-0 solution__section solution__section--pic pic-2">&nbsp;</div>
+        <div class="col-lg-8 col-xs-12 solution__section solution__section--desc">
+          <p id="solution2" class="solution__section--title">Task Management</p>
+          <p>
+            Maintain all teams assgined and productive 100% of the time. The task management system allow your teams to
+            efficiently autoregulate their work loads.
+          </p>
+          <table aria-describedby="Features table">
+            <tr>
+              <th>Feature</th>
+              <th>Description</th>
+            </tr>
+            <tr>
+              <td>Agenda style</td>
+              <td>
+                All your team members can manage thier work loads by priority and criticallity
+              </td>
+            </tr>
+            <tr>
+              <td>Reasign task</td>
+              <td>
+                You can coordinate with your team to take some of your work if available
+              </td>
+            </tr>
+            <tr>
+              <td>Metrics driven</td>
+              <td>
+                All tasks are measured and tracked in order to detect possible improvements.
+              </td>
+            </tr>
+          </table>
+        </div>
+        </div>
+      </article>
+    </section>
+
+    <section>
+      <h2 id="industries" data-aos="fade-down" class="section--title">Industries</h2>
+      <div class="row" data-aos="fade-down">
+        <div class="col-lg-3 col-xs-12">
+          <div class="nav industries__nav nav-pills" id="v-pills-tab" role="tablist" aria-orientation="horizontal">
+            <a class="nav-link active" id="v-pills-industry1-tab" data-toggle="pill" href="#v-pills-industry1"
+              role="tab" aria-controls="v-pills-industry1" aria-selected="true">Pharmaceutical</a>
+            <a class="nav-link" id="v-pills-industry2-tab" data-toggle="pill" href="#v-pills-industry2" role="tab"
+              aria-controls="v-pills-industry2" aria-selected="false">Supply chain management</a>
+            <a class="nav-link" id="v-pills-industry3-tab" data-toggle="pill" href="#v-pills-industry3" role="tab"
+              aria-controls="v-pills-industry3" aria-selected="false">Software</a>
+
+          </div>
+        </div>
+        <div class="col-lg-9 col-xs-12">
+          <div class="tab-content industries__content" id="v-pills-tabContent">
+            <div class="tab-pane industries__content--tab-pane fade show active" id="v-pills-industry1" role="tabpanel"
+              aria-labelledby="v-pills-industry1-tab">FloWork enables complex R&D protocol based processes in all of the
+              steps of the process, from samples acquisitions to field testing phases</div>
+            <div class="tab-pane industries__content--tab-pane fade" id="v-pills-industry2" role="tabpanel"
+              aria-labelledby="v-pills-industry2-tab">FloWork is a great ally for all of the supply chain tasks to
+              enable
+              workflows and processes for raw resources discovery extraction, transportation, manufacture and retail
+              distribution and sales.
+            </div>
+            <div class="tab-pane industries__content--tab-pane fade" id="v-pills-industry3" role="tabpanel"
+              aria-labelledby="v-pills-industry3-tab">
+              From the vast set of tools to handle development teams already in the market, FloWork arise as the easiest
+              Agile methodology management tools. </div>
+
+          </div>
+        </div>
+    </section>
+
+    <section>
+      <h2 id="cases" data-aos="fade-down" class="section--title">Success Cases</h2>
+      <article class="row cases__section">
+
+        <div data-aos="fade-down" data-aos-delay="100" class="col-lg-4 col-xs-12 cases__section--box case-1"
+          data-toggle="modal" data-target="#modalCase1">
+
+        </div>
+        <div data-aos="fade-down" data-aos-delay="200" class="col-lg-4 col-xs-12 cases__section--box case-2"
+          data-toggle="modal" data-target="#modalCase2">
+
+        </div>
+        <div data-aos="fade-down" data-aos-delay="300" class="col-lg-4 col-xs-12 cases__section--box case-3"
+          data-toggle="modal" data-target="#modalCase3">
+
+        </div>
+
+      </article>
+    </section>
+
   </main>
   <footer class="home">
-    <p class="float-left">© FloWork 2021</p>
-    <div class="float-right">
-      <div class="footer__icon footer__icon--github-white"></div>
-      <div class="footer__icon footer__icon--facebook-white"></div>
-      <div class="footer__icon footer__icon--instagram-white"></div>
-      <div class="footer__icon footer__icon--linkedin-white"></div>
-      <div class="footer__icon footer__icon--youtube-white"></div>
-      <div class="footer__icon footer__icon--twitter-white"></div>
+    <div class="footer__cont">
+      <div class="footer__cont--block">
+        <p class="footer__cont--block-p-l1">FloWork</p>
+        <p class="footer__cont--block-p-l">123 Cañada St</p>
+        <p class="footer__cont--block-p-l">ZIP: X5014IAD</p>
+        <p class="footer__cont--block-p-l">Córdoba, Argentina</p>
+      </div>
+      <div class="footer__cont--block">
+        <p class="footer__cont--block-p-r1">Studio</p>
+        <p class="footer__cont--block-p-r">(54) 11 3817 0589</p>
+        <p class="footer__cont--block-p-r">vascordoba@gmail.com</p>
+        <p class="footer__cont--block-p-r">&nbsp;</p>
+      </div>
+    </div>
+    <div class="footer_cont">
+      <p class="float-left">© FloWork 2021</p>
+      <div class="float-right">
+        <div class="footer__icon footer__icon--github-white"></div>
+        <div class="footer__icon footer__icon--facebook-white"></div>
+        <div class="footer__icon footer__icon--instagram-white"></div>
+        <div class="footer__icon footer__icon--linkedin-white"></div>
+        <div class="footer__icon footer__icon--youtube-white"></div>
+        <div class="footer__icon footer__icon--twitter-white"></div>
+      </div>
     </div>
   </footer>
+
+  <div class="modal fade" id="modalCase1" data-backdrop="static" data-keyboard="false" tabindex="-1"
+    aria-labelledby="modalCase1Label" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalCase1Label">Wayne Enterprises Corp.</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p>In order to produce high quality tech solutions, at Wayne we provide support to the Tumbler's main
+            manufacture pipeline.</p>
+          <p>All the workflow steps of the pipeline are handled and follow up through FloWork Platform, helping in the
+            coordination of all the areas involved (Adquisitions, Logistics, R&D, Production, Q&A) in the process, along
+            with the correct association and assignment of teams' tasks.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modalCase2" data-backdrop="static" data-keyboard="false" tabindex="-1"
+    aria-labelledby="modalCase2Label" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalCase2Label">Weyland Corp.</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p>Current deep space exploration at Weyland Corp. requires a complex process coordination amongst the several
+            production lines distributed around the world.
+          </p>
+          <p>With the recent discoveries related to the possible origin of life on Earth, the Prometeus project has
+            launched an Request for Proposal to help them decide and implement the task management system to support the
+            project's excecution.</p>
+          <p>At FloWork, we are happy to announce that we have been selected for such hugh responsibility to supply the
+            tech solution for such endeavor.
+          </p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modalCase3" data-backdrop="static" data-keyboard="false" tabindex="-1"
+    aria-labelledby="modalCase3Label" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalCase3Label">Stark Industries</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p>With the recent events of leaving behind the main Weapons manufacture, and focusing on Life Saving
+            technologies, we have become Stark's main partner to supply the company with the Process Oversight platform
+            that Jarvis will be integrating.
+          </p>
+          <p>FloWork platform is now the leading tool for reviwing every step of the manufacture workflows of the
+            Organization.</p>
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
   <script src="./js/jquery-3.6.0.min.js"></script>
   <script src="./js/bootstrap.bundle.min.js"></script>
   <script src="./js/anime.min.js"></script>
   <script src="./js/animations.js"></script>
+  <script src="./js/aos.js"></script>
+  <script>
+    AOS.init({ duration: 1200, });
+  </script>
 </body>
 
 </html>

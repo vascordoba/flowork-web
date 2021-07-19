@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="FloWork solutions related to Workflow and Task Management">
   <meta name="keywords" content="WORKFLOW, TASK MANAGEMENT TOOL, TASKS, CLOUD, SOLUTIONS">
+  <link rel="stylesheet" href="../css/aos.css">
   <link rel="stylesheet" href="../css/bootstrap.min.css">
   <link rel="stylesheet" href="../css/bootstrap-grid.min.css">
   <link rel="stylesheet" href="../css/styles.css">
@@ -42,10 +43,9 @@
 
   <main>
     <section class="container-fluid">
-      <h2 id="solution1">Workflow Management</h2>
-      <article class="row">
+      <article class="row" data-aos="fade-right" data-aos-delay="100">
         <div class="col-lg-8 col-xs-12 solution__section solution__section--desc">
-          <p>Workflow Management</p>
+          <p id="solution1" class="solution__section--title">Workflow Management</p>
           <p>
             You can model all level of complex processes running in your daily operations. Never was so easy to
             integrate any numbre of areas and teams to work as efficient as possible, with the chance to follow up at
@@ -80,11 +80,11 @@
         <div class="col-lg-4 col-xs-0 solution__section solution__section--pic pic-1">&nbsp;</div>
 
       </article>
-      <article class="row" id="solution2">
+      <article class="row" data-aos="fade-left" data-aos-delay="200">
 
         <div class="col-lg-4 col-xs-0 solution__section solution__section--pic pic-2">&nbsp;</div>
         <div class="col-lg-8 col-xs-12 solution__section solution__section--desc">
-          <p>Task Management</p>
+          <p id="solution2" class="solution__section--title">Task Management</p>
           <p>
             Maintain all teams assgined and productive 100% of the time. The task management system allow your teams to
             efficiently autoregulate their work loads.
@@ -118,21 +118,39 @@
       </article>
     </section>
   </main>
-  <footer>
-    <p class="float-left">© FloWork 2021</p>
-    <div class="float-right">
-      <div class="footer__icon footer__icon--github"></div>
-      <div class="footer__icon footer__icon--facebook"></div>
-      <div class="footer__icon footer__icon--instagram"></div>
-      <div class="footer__icon footer__icon--linkedin"></div>
-      <div class="footer__icon footer__icon--youtube"></div>
-      <div class="footer__icon footer__icon--twitter"></div>
+  <footer class="home">
+    <div class="footer__cont">
+      <div class="footer__cont--block">
+        <p class="footer__cont--block-p-l1">FloWork</p>
+        <p class="footer__cont--block-p-l">123 Cañada St</p>
+        <p class="footer__cont--block-p-l">ZIP: X5014IAD</p>
+        <p class="footer__cont--block-p-l">Córdoba, Argentina</p>
+      </div>
+      <div class="footer__cont--block">
+        <p class="footer__cont--block-p-r1">Studio</p>
+        <p class="footer__cont--block-p-r">(54) 11 3817 0589</p>
+        <p class="footer__cont--block-p-r">vascordoba@gmail.com</p>
+        <p class="footer__cont--block-p-r">&nbsp;</p>
+      </div>
+    </div>
+    <div class="footer_cont">
+      <p class="float-left">© FloWork 2021</p>
+      <div class="float-right">
+        <div class="footer__icon footer__icon--github-white"></div>
+        <div class="footer__icon footer__icon--facebook-white"></div>
+        <div class="footer__icon footer__icon--instagram-white"></div>
+        <div class="footer__icon footer__icon--linkedin-white"></div>
+        <div class="footer__icon footer__icon--youtube-white"></div>
+        <div class="footer__icon footer__icon--twitter-white"></div>
+      </div>
     </div>
   </footer>
   <script src="../js/jquery-3.6.0.min.js"></script>
   <script src="../js/bootstrap.bundle.min.js"></script>
   <script src="../js/anime.min.js"></script>
   <script src="../js/animations.js"></script>
+  <script src="../js/aos.js"></script>
+  <script>AOS.init({ duration: 1200 });</script>
 </body>
 
 </html>
