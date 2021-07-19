@@ -307,6 +307,7 @@ footer {
 }
 
 .cases__section--box {
+  height: 200px;
   background-size: cover;
   background-position: center;
   padding: 8px;
